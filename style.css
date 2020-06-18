@@ -7,12 +7,29 @@ body {
   src: url(fonts/Lora/Lora-Regular.ttf);
 }
 
+a {
+	color: black;
+}
+
 .container {
 	margin: 100px 5%;
 }
 
 .container h1, p {
 	text-align: center;
+}
+
+.container h1 {
+	margin: 0px 25%;
+}
+
+.container .sub-head {
+	margin: 0px 33%;
+	font-style: italic;
+}
+
+.container .article-body {
+	margin: 75px 15%;
 }
 
 .map-container {
@@ -24,6 +41,11 @@ body {
 	top: 0px;
 	height: 500px;
 	overflow: scroll;
+	width: 100%;
+}
+
+.map-overlay::-webkit-scrollbar {
+  display: none;
 }
 
 .hide {
@@ -55,4 +77,8 @@ body {
 
 .black {
 	fill: black;
+}
+
+.data-source {
+	font-size: 12px;
 }

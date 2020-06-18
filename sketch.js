@@ -60,18 +60,19 @@ var update = function(){
     } else if (isInView(elementD)) {
     	console.log("element E is in view")
     	highlightedStates = statesD;
-    } else {
+    } else if (isInView(elementE)) {
+    	console.log("element E is in view")
     	highlightedStates = statesD;
     	document.getElementById("map-overlay").classList.add("hide");
+    } else {
+    	
     }
 
     var stateElements = document.getElementsByClassName("state-path");
 
 	for (var i = 0; i < stateElements.length; i++) {
-		console.log(stateElements[i])
 		
 		let elementId = stateElements[i].getAttribute("id");
-		console.log(highlightedStates.includes(elementId))
 
 		if (highlightedStates.includes(elementId)) {
 			stateElements[i].setAttribute("fill", stateElements[i].getAttribute("data-color"));
@@ -79,21 +80,6 @@ var update = function(){
 			stateElements[i].setAttribute("fill", "grey");
 		}
 	}
-
-    
-	// if (resultA) {
-	// 	state1.setAttribute("fill", "black");
-	// 	state2.setAttribute("fill", "black");
-	// } else {
-	// 	let origColor1 = state1.getAttribute("data-color");
-	// 	let origColor2 = state2.getAttribute("data-color");
-	// 	state1.setAttribute("fill", origColor1);
-	// 	state2.setAttribute("fill", origColor2);
-	// }
-
-	// if (resultB) {
-
-	// }
 };
 
 // attachEvent(document.getElementById('element1'), "scroll", update);

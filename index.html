@@ -5,8 +5,11 @@
 <link rel="stylesheet" type="text/css" href="./style.css">
 <body onscroll="update();">
 	<div class="container">
-		<h1>K-12 Funding in the U.S.</h1>
-		<p>Each state in the U.S. differs in the amount per student it spends on public school education.</p>
+		<h1>How Much Does Your State Fund Public Education?</h1>
+		<p class="sub-head">Each state in the U.S. differs in the amount per student it spends on public school education.</p>
+		<div class="article-body">
+			<p class="article-item">According to <a href="https://nces.ed.gov/programs/digest/d18/tables/dt18_236.75.asp?current=yes">data from the National Center for Education Statistics</a>, there is a large difference in the amount per student each state funds public education. In some cases, a student in one state could be receiving 1/3 the amount of funding as a student in another state. Explore the map below.</p>
+		</div>
 	</div>
 
 	<div class="container map-container">
@@ -14,25 +17,39 @@
 
 		<div class="map-overlay hide" id="map-overlay" onscroll="update();">
 			<div class="map-text-container" id="elementA">
-				<p>There is a stark difference between the amount of funding each state allocates per student in each state. Depending on the district, a student in Utah could be receiving $15,000 less than a student in New York, amounting to about 1/3 the amount of resources.</p>
+				<p>Depending on the district, a student in Utah could be receiving $15,000 less than a student in New York.</p>
 			</div>
 
 			<div class="map-text-container" id="elementB">
-				<p>Four states spend less than $8,000, with Utah spending the least at $7,006.</p>
+				<p>Four states spend less than $8,000 per student, with Utah spending the least at $7,006.</p>
 			</div>
 
 			<div class="map-text-container" id="elementC">
-				<p>Five states spend over than $19,000, with New York spending the most at $21,818.</p>
+				<p>Five states spend over than $19,000 per student, with New York spending the most at $21,818.</p>
 			</div>
 
 			<div class="map-text-container" id="elementD">
-				<p>Explore this map to find out how much your state spends.</p>
+				<p>Explore this map to find out how much your state spends by hovering over it.</p>
 			</div>
 
 			<div class="map-text-container" id="elementE">
 			</div>
 		</div>
 		
+	</div>
+
+	<div class="container data-source">
+		<p>SOURCE: National Center for Education Statistics</p>
+	</div>
+
+	<div class="container">
+		<div class="article-body">
+			<p class="article-item">According to an <a href="https://ncses.nsf.gov/indicators/states/indicator/public-school-per-pupil-expenditures/table">article by the National Center for Science and Engineering Statistics</a>, current expenditures by public schools include instruction and related costs, student support services, administration, and operations and exclude funds for school construction and other capital outlays, debt service, and programs outside of public elementary and secondary education.</p>
+		</div>
+
+		<div class="article-body">
+			<p class="article-item">According to an <a href="https://www.governing.com/topics/education/gov-education-funding-states.html">article by Governing</a>, there are many reasons why states differ in public school education funding.</p>
+		</div>
 	</div>
 
 	
